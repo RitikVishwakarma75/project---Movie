@@ -1,0 +1,24 @@
+.main-container {
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: white;
+    padding: 3rem 1.5rem;
+    transition: opacity 1s ease;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .glow-title {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 16px rgba(255, 0, 0, 0.5);
+  }
+  
+  .custom-button {
+    transition: all 0.3s ease;
+    transform: translateY(0px);
+  }
+  .custom-button:hover {
+    transform: translateY(-2px) scale(1.03);
+  }
+  

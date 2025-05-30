@@ -1,0 +1,101 @@
+/* Product Page Styles */
+.product-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 1600px;
+  background-color: rgba(0, 255, 255, 0);
+  height: 810px;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .product-page {
+    flex-direction: column;
+    position: relative;
+    top: 2300px;
+    height: 100%;
+    width: 100%;
+  }
+  .h2{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  
+}
+
+.product-image {
+  width: 50%;
+  height: auto;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.p-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.p-img {
+  border-radius: 20px;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;  
+  text-align: left;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.explore-button {
+
+  width: 35%;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+/* Apply the visible class to trigger the animations */
+.product-image.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product-description.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Responsive Styles */
